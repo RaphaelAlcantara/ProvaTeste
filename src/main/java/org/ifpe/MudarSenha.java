@@ -2,9 +2,9 @@ package org.ifpe;
 
 public class MudarSenha {
 
-    Login login = new Login();
+    LoginADM loginADM = new LoginADM();
     public boolean changePassword(String usuario, String senha, String novaSenha) {
-        if(login.validarLogin(usuario, senha)){
+        if(loginADM.validarLogin(usuario, senha)){
             if (novaSenha.equals("NovoP@ssw0rd!")) {
                 return true;
             }

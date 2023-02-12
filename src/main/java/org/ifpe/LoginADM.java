@@ -2,7 +2,7 @@ package org.ifpe;
 
 
 
-public class Login {
+public class LoginADM {
 
 
 
@@ -33,7 +33,6 @@ public class Login {
     public boolean validarLogout(String logoutCode) {
         return switch (logoutCode) {
             case "S" -> true;
-            case "" -> false;
             case "N" -> false;
             default -> false;
         };
